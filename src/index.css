@@ -1,0 +1,42 @@
+.container {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+button {
+    color: #e9edf9;
+    padding: 10px 15px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+button.delete-neutral{
+    background-color: #e84a50;
+}
+
+button.delete-neutral.done-text{
+    background-color: #fce4e5;
+    color: white;
+}
+
+button.neutral{
+    background-color: #0b6bf2;
+}
+
+span.done-text {
+    text-decoration: line-through;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li.done-text:before {
+    content: '\2713'
+}
