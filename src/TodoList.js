@@ -7,7 +7,7 @@ const TodoList = ({ items = [], onItemClick }) => {
 
     return (
         <ul>
-            {items.length &&
+            {items.length > 0 &&
                 items.map((item) => {
                     const { id, text, done } = item;
 

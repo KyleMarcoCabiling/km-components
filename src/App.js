@@ -4,7 +4,7 @@ import AddTodo from './AddTodo';
 import DoneAllTodo from './DoneAllTodo';
 
 const sampleData = [
-    { id: 1, text: 'This is a sample text', done: true },
+    { id: 1, text: 'This is a sample text', done: false },
     { id: 2, text: 'This is a sample text v2', done: false },
 ];
 
@@ -48,7 +48,7 @@ function App() {
             <h2>To Do List</h2>
             <AddTodo onItemClick={onItemClick} />
             <TodoList items={items} onItemClick={onItemClick} />
-            <DoneAllTodo isAllDone={isAllDone} />
+            <DoneAllTodo items={items} isAllDone={isAllDone} />
         </div>
     );
 }
